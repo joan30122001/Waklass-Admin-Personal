@@ -181,16 +181,16 @@
 
         <!--start sidebar -->
         <aside class="sidebar-wrapper" data-simplebar="true">
-          <div class="sidebar-header">
-            <div>
-              <img src="assets/images/favicon-32x32.png" class="logo-icon" alt="logo icon">
-            </div>
-            <div>
-              <h4 class="logo-text">Waklass</h4>
-            </div>
-            <div class="toggle-icon ms-auto"> <i class="bi bi-list"></i>
-            </div>
-          </div>
+            <div class="sidebar-header">
+                <div>
+                  <img src="assets/images/favicon-32x32.png" class="logo-icon" alt="logo icon">
+                </div>
+                <div>
+                  <h4 class="logo-text">Waklass</h4>
+                </div>
+                <div class="toggle-icon ms-auto"> <i class="bi bi-list"></i>
+                </div>
+              </div>
           <!--navigation-->
           <ul class="metismenu" id="menu">
 
@@ -280,13 +280,13 @@
           <main class="page-content">
             <!--breadcrumb-->
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-              <div class="breadcrumb-title pe-3">Students</div>
+              <div class="breadcrumb-title pe-3">Payments</div>
               <div class="ps-3">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Preview Student</li>
+                    <li class="breadcrumb-item active" aria-current="page">Add Payment</li>
                   </ol>
                 </nav>
               </div>
@@ -314,53 +314,28 @@
                          <input class="form-control ps-5" type="text" placeholder="search...">
                        </form>
                    </div> -->
-                   <div class="table-responsive mt-3">
-                    
-
-
-                    <table class="table align-middle">
-                        <thead class="table-secondary">
-                          <!-- Removed as headers will now be inline -->
-                        </thead>
-                        <tbody>
-                          <!-- Each set of <tr> tags now represents one record with vertical headers -->
-                          <tr>
-                            <th>Name:</th>
-                            <td>Joan</td>
-                          </tr>
-                          <tr>
-                            <th>Level of study</th>
-                            <td>-</td>
-                          </tr>
-                          <tr>
-                            <th>Subjects of interest:</th>
-                            <td>2</td>
-                          </tr>
-                          <tr>
-                            <th>Created:</th>
-                            <td>24 May 2024, 17:18</td>
-                          </tr>
-                          <tr>
-                            <th>Updated:</th>
-                            <td>24 May 2024, 17:18</td>
-                          </tr>
-                          <tr>
-                            <th>Actions</th>
-                            <td>
-                              <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                                <a href="edit-student.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                                <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a>
-                              </div>
-                            </td>
-                          </tr>
-                          <!-- Repeat the above structure for each person's data -->
-                        </tbody>
-                      </table>
-                  </div>
+                   <form>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight: bold;">Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </form>
                  </div>
               </div>
 
-            
+            <div class="mb-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success"><i class="bi bi-save2-fill" style="margin-right: 10px;"></i> Save and back</button>
+                    <button type="button" class="btn btn-success split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">	<span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Save and edit this item</a></li>
+                    <li><a class="dropdown-item" href="#">Save and new item</a></li>
+                    <li><a class="dropdown-item" href="#">Save and preview</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-secondary "><i class="bi bi-x-circle-fill" style="margin-right: 10px;"></i>Cancel</button>
+            </div>
     
           </main>
        <!--end page main-->
@@ -384,7 +359,6 @@
         <!--End Back To Top Button-->
   </div>
   <!--end wrapper-->
-
 
 
   <!-- Bootstrap bundle JS -->

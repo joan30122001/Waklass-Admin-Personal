@@ -181,16 +181,16 @@
 
         <!--start sidebar -->
         <aside class="sidebar-wrapper" data-simplebar="true">
-          <div class="sidebar-header">
-            <div>
-              <img src="assets/images/favicon-32x32.png" class="logo-icon" alt="logo icon">
-            </div>
-            <div>
-              <h4 class="logo-text">Waklass</h4>
-            </div>
-            <div class="toggle-icon ms-auto"> <i class="bi bi-list"></i>
-            </div>
-          </div>
+            <div class="sidebar-header">
+                <div>
+                  <img src="assets/images/favicon-32x32.png" class="logo-icon" alt="logo icon">
+                </div>
+                <div>
+                  <h4 class="logo-text">Waklass</h4>
+                </div>
+                <div class="toggle-icon ms-auto"> <i class="bi bi-list"></i>
+                </div>
+              </div>
           <!--navigation-->
           <ul class="metismenu" id="menu">
 
@@ -280,87 +280,79 @@
           <main class="page-content">
             <!--breadcrumb-->
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-              <div class="breadcrumb-title pe-3">Students</div>
+              <div class="breadcrumb-title pe-3">General Infos</div>
               <div class="ps-3">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Preview Student</li>
+                    <li class="breadcrumb-item active" aria-current="page">Share Informations</li>
                   </ol>
                 </nav>
               </div>
-              <!-- <div class="ms-auto">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary">Settings</button>
-                  <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden">Toggle Dropdown</span>
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	<a class="dropdown-item" href="javascript:;">Action</a>
-                    <a class="dropdown-item" href="javascript:;">Another action</a>
-                    <a class="dropdown-item" href="javascript:;">Something else here</a>
-                    <div class="dropdown-divider"></div>	<a class="dropdown-item" href="javascript:;">Separated link</a>
-                  </div>
-                </div>
-              </div> -->
             </div>
             <!--end breadcrumb-->
 
             <div class="card">
                  <div class="card-body">
-                   <!-- <div class="d-flex align-items-center">
-                      <a href="" class="btn btn-primary">+ Add teacher</a>
-                       <form class="ms-auto position-relative">
-                         <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-search"></i></div>
-                         <input class="form-control ps-5" type="text" placeholder="search...">
-                       </form>
-                   </div> -->
-                   <div class="table-responsive mt-3">
-                    
-
-
-                    <table class="table align-middle">
-                        <thead class="table-secondary">
-                          <!-- Removed as headers will now be inline -->
-                        </thead>
-                        <tbody>
-                          <!-- Each set of <tr> tags now represents one record with vertical headers -->
-                          <tr>
-                            <th>Name:</th>
-                            <td>Joan</td>
-                          </tr>
-                          <tr>
-                            <th>Level of study</th>
-                            <td>-</td>
-                          </tr>
-                          <tr>
-                            <th>Subjects of interest:</th>
-                            <td>2</td>
-                          </tr>
-                          <tr>
-                            <th>Created:</th>
-                            <td>24 May 2024, 17:18</td>
-                          </tr>
-                          <tr>
-                            <th>Updated:</th>
-                            <td>24 May 2024, 17:18</td>
-                          </tr>
-                          <tr>
-                            <th>Actions</th>
-                            <td>
-                              <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                                <a href="edit-student.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                                <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a>
-                              </div>
-                            </td>
-                          </tr>
-                          <!-- Repeat the above structure for each person's data -->
-                        </tbody>
-                      </table>
-                  </div>
+                   <form>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight: bold;">Informations type <span style="color: red;">*</span></label>
+                        <div class="input-group mb-3"> 
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>-</option>
+                                <option value="1">Communiqués</option>
+                                <option value="2">Avertissements</option>
+                                <option value="3">Opportunités</option>
+                                <option value="4">Annonces</option>
+                                <option value="5">Urgences</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight: bold;">Send to <span style="color: red;">*</span></label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault1">
+                            <label class="form-check-label" for="loginRadioDefault1">Teachers</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault2">
+                            <label class="form-check-label" for="loginRadioDefault1">Students</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault3">
+                            <label class="form-check-label" for="loginRadioDefault1">Both teachers and Students</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" style="font-weight: bold;" class="form-label">Message <span style="color: red;">*</span></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <!-- <div class="mb-3">
+                        <label class="form-label" style="font-weight: bold;">Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight: bold;">Points</label>
+                        <input type="text" class="form-control">
+                    </div> -->
+                </form>
                  </div>
               </div>
 
-            
+            <div class="mb-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success"><i class="bi bi-save2-fill" style="margin-right: 10px;"></i> Broadcast</button>
+                    <!-- <button type="button" class="btn btn-success split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">	<span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Save and edit this item</a></li>
+                    <li><a class="dropdown-item" href="#">Save and new item</a></li>
+                    <li><a class="dropdown-item" href="#">Save and preview</a></li>
+                    </ul> -->
+                </div>
+                <button type="button" class="btn btn-secondary "><i class="bi bi-x-circle-fill" style="margin-right: 10px;"></i>Cancel</button>
+            </div>
     
           </main>
        <!--end page main-->
@@ -384,7 +376,6 @@
         <!--End Back To Top Button-->
   </div>
   <!--end wrapper-->
-
 
 
   <!-- Bootstrap bundle JS -->
