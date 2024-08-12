@@ -205,7 +205,7 @@
               </a>
             </li>
             <li>
-              <a href="student.html">
+              <a href="student.html" data-toggle="modal" data-target="#exampleModalCenter">
                 <div class="parent-icon"><i class="bi bi-person-fill"></i>
                 </div>
                 <div class="menu-title">Students</div>
@@ -219,12 +219,19 @@
               </a>
             </li>
             <li>
-              <a href="deposit-withdraw.html">
+              <a href="withdraw.html">
                 <div class="parent-icon"><i class="bi bi-cash-coin"></i>
                 </div>
-                <div class="menu-title">Deposits & Withdrawals</div>
+                <div class="menu-title">Deposits</div>
               </a>
             </li>
+            <li>
+                <a href="deposit.html">
+                  <div class="parent-icon"><i class="bi bi-cash-coin"></i>
+                  </div>
+                  <div class="menu-title">Withdrawals</div>
+                </a>
+              </li>
             <li>
               <a href="plan.html">
                 <div class="parent-icon"><i class="bi bi-file-check-fill"></i>
@@ -269,13 +276,13 @@
           <main class="page-content">
             <!--breadcrumb-->
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-              <div class="breadcrumb-title pe-3">Payments</div>
+              <div class="breadcrumb-title pe-3">Deposits</div>
               <div class="ps-3">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Edit Payment</li>
+                    <li class="breadcrumb-item active" aria-current="page">Add Deposit</li>
                   </ol>
                 </nav>
               </div>
@@ -305,36 +312,34 @@
                    </div> -->
                    <form>
                     <div class="mb-3">
-                        <label class="form-label" style="font-weight: bold;">Status</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault1">
-                            <label class="form-check-label" for="loginRadioDefault1">Initiated</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault2">
-                            <label class="form-check-label" for="loginRadioDefault1">Pending</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault3">
-                            <label class="form-check-label" for="loginRadioDefault1">Success</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault4">
-                            <label class="form-check-label" for="loginRadioDefault1">Failed</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault5">
-                            <label class="form-check-label" for="loginRadioDefault1">Canceled</label>
-                        </div>
+                        <label class="form-label" style="font-weight: bold;">Name <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" style="font-weight: bold;">Details</label>
-                        <textarea class="form-control" rows="3"></textarea>
+                        <label class="form-label" style="font-weight: bold;">Email <span style="color: red;">*</span></label>
+                        <input type="email" class="form-control" placeholder="example@gmail.com">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" style="font-weight: bold;">Ref</label>
-                        <textarea class="form-control" rows="3"></textarea>
+                        <label class="form-label" style="font-weight: bold;">Phone Number <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control">
                     </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight: bold;">Amount <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight: bold;">Payment Operator <span style="color: red;">*</span></label>
+                        <div class="input-group mb-3"> 
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>-</option>
+                                <option value="1">Paypal</option>
+                                <option value="2">Admin Recharge</option>
+                                <option value="3">Orange Money</option>
+                                <option value="4">MTN Mobile Money</option>
+                            </select>
+                        </div>
+                    </div>
+                    
                 </form>
                  </div>
               </div>
@@ -350,7 +355,7 @@
                     <li><a class="dropdown-item" href="#">Save and preview</a></li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-secondary "><i class="bi bi-x-circle-fill" style="margin-right: 10px;"></i>Cancel</button>
+                <button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#exampleModalCenter"><i class="bi bi-x-circle-fill" style="margin-right: 10px;"></i>Cancel</button>
             </div>
     
           </main>
@@ -375,6 +380,40 @@
         <!--End Back To Top Button-->
   </div>
   <!--end wrapper-->
+
+
+  <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-body p-4 px-5">
+
+            
+            <div class="main-content text-center">
+                
+                <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+
+                <div class="warp-icon mb-4">
+                  <span class="icon-lock2"><i class="bi bi-check-square-fill"></i></span>
+                </div>
+                
+                  <!-- <label for="">This link is password protected</label> -->
+                  <p class="mb-4">The changes you've made may not be saved.</p><br><br>
+
+                  <div class="mb-4">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success"> Yes quit</button>
+                    </div>
+                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#exampleModalCenter">Cancel</button>
+                </div>
+                
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   <!-- Bootstrap bundle JS -->

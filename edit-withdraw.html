@@ -219,12 +219,20 @@
               </a>
             </li>
             <li>
-              <a href="deposit-withdraw.html">
+              <a href="deposit.html">
                 <div class="parent-icon"><i class="bi bi-cash-coin"></i>
                 </div>
-                <div class="menu-title">Deposits & Withdrawals</div>
+                <div class="menu-title">Deposits</div>
               </a>
             </li>
+            <li>
+              <a href="withdraw.html">
+                <div class="parent-icon"><i class="bi bi-cash-coin"></i>
+                </div>
+                <div class="menu-title">Withdrawals</div>
+              </a>
+            </li>
+          <li>
             <li>
               <a href="plan.html">
                 <div class="parent-icon"><i class="bi bi-file-check-fill"></i>
@@ -269,168 +277,89 @@
           <main class="page-content">
             <!--breadcrumb-->
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-              <div class="breadcrumb-title pe-3">Payments</div>
+              <div class="breadcrumb-title pe-3">Withdrawals</div>
               <div class="ps-3">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Manage Payments</li>
+                    <li class="breadcrumb-item active" aria-current="page">Edit Withdrawal</li>
                   </ol>
                 </nav>
               </div>
+              <!-- <div class="ms-auto">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary">Settings</button>
+                  <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	<a class="dropdown-item" href="javascript:;">Action</a>
+                    <a class="dropdown-item" href="javascript:;">Another action</a>
+                    <a class="dropdown-item" href="javascript:;">Something else here</a>
+                    <div class="dropdown-divider"></div>	<a class="dropdown-item" href="javascript:;">Separated link</a>
+                  </div>
+                </div>
+              </div> -->
             </div>
             <!--end breadcrumb-->
 
             <div class="card">
                  <div class="card-body">
-                   <div class="d-flex align-items-center">
-                      <!-- <a href="add-teacher.html" class="btn btn-primary">+ Add teacher</a> -->
-                      <!-- <h5 class="mb-0">Customer Details</h5> -->
+                   <!-- <div class="d-flex align-items-center">
+                      <a href="" class="btn btn-primary">+ Add teacher</a>
                        <form class="ms-auto position-relative">
                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-search"></i></div>
                          <input class="form-control ps-5" type="text" placeholder="search...">
                        </form>
-                   </div>
-                   <div class="table-responsive mt-3">
-                     <table class="table align-middle">
-                       <thead class="table-secondary">
-                         <tr>
-                          <th>Tracking code</th>
-                          <th>Type</th>
-                          <th>User</th>
-                          <th>UserType</th>
-                          <th>Payment operator</th>
-                          <th>Phone number</th>
-                          <th>Amount</th>
-                          <th>Status</th>
-                          <th>Actions</th>
-                         </tr>
-                       </thead>
-                       <tbody>
-                         <tr>
-                           <td>WTN5Z6SUXD</td>
-                           <td>deposit</td>
-                           <td>Joan</td>
-                           <td>student</td>
-                           <td>MTN Mobile Money</td>
-                           <td>697161353</td>
-                           <td>500XAF</td>
-                           <td>success</td>
-                           <td>
-                             <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                               <a href="preview-deposit-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                               <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                               <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
-                             </div>
-                           </td>
-                         </tr>
-                         <tr>
-                           <td>WTN5Z6SUXD</td>
-                           <td>deposit</td>
-                           <td>Joan</td>
-                           <td>student</td>
-                           <td>MTN Mobile Money</td>
-                           <td>697161353</td>
-                           <td>500XAF</td>
-                           <td>initiated</td>
-                           <td>
-                            <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                              <a href="preview-deposit-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
-                            </div>
-                          </td>
-                         </tr>
-                         <tr>
-                           <td>WTN5Z6SUXD</td>
-                           <td>deposit</td>
-                           <td>Joan</td>
-                           <td>student</td>
-                           <td>MTN Mobile Money</td>
-                           <td>697161353</td>
-                           <td>500XAF</td>
-                           <td>success</td>
-                           <td>
-                            <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                              <a href="preview-deposit-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
-                            </div>
-                          </td>
-                         </tr>
-                         <tr>
-                           <td>WTN5Z6SUXD</td>
-                           <td>deposit</td>
-                           <td>Joan</td>
-                           <td>student</td>
-                           <td>MTN Mobile Money</td>
-                           <td>697161353</td>
-                           <td>500XAF</td>
-                           <td>initiated</td>
-                           <td>
-                            <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                              <a href="preview-deposit-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
-                            </div>
-                          </td>
-                         </tr>
-                         <tr>
-                           <td>WTN5Z6SUXD</td>
-                           <td>deposit</td>
-                           <td>Joan</td>
-                           <td>student</td>
-                           <td>MTN Mobile Money</td>
-                           <td>697161353</td>
-                           <td>500XAF</td>
-                           <td>initiated</td>
-                           <td>
-                            <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                              <a href="preview-deposit-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
-                            </div>
-                          </td>
-                         </tr>
-                         <tr>
-                           <td>WTN5Z6SUXD</td>
-                           <td>deposit</td>
-                           <td>Joan</td>
-                           <td>student</td>
-                           <td>MTN Mobile Money</td>
-                           <td>697161353</td>
-                           <td>500XAF</td>
-                           <td>success</td>
-                           <td>
-                            <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                              <a href="preview-deposit-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
-                            </div>
-                          </td>
-                         </tr>
-                       </tbody>
-                     </table>
-                   </div>
+                   </div> -->
+                   <form>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight: bold;">Status</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault1">
+                            <label class="form-check-label" for="loginRadioDefault1">Initiated</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault2">
+                            <label class="form-check-label" for="loginRadioDefault1">Pending</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault3">
+                            <label class="form-check-label" for="loginRadioDefault1">Success</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault4">
+                            <label class="form-check-label" for="loginRadioDefault1">Failed</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="LoginRadioDefault" id="loginRadioDefault5">
+                            <label class="form-check-label" for="loginRadioDefault1">Canceled</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight: bold;">Details</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="font-weight: bold;">Ref</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                </form>
                  </div>
               </div>
-              <div>
-                <ul class="pagination justify-content-end">
-                  <li class="page-item"><a class="page-link" href="#" aria- label="Previous">&laquo;</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active"><a class="page-link " href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#">6</a></li>
-                  <li class="page-item"><a class="page-link" href="#">7</a></li>
-                  <li class="page-item"><a class="page-link" href="#">8</a></li>
-                  <li class="page-item"><a class="page-link" href="#">9</a></li>
-                  <li class="page-item"><a class="page-link" href="#" aria-label="Next">&raquo;</a></li>
-                </ul>
-              </div>
 
+            <div class="mb-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success"><i class="bi bi-save2-fill" style="margin-right: 10px;"></i> Save and back</button>
+                    <button type="button" class="btn btn-success split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">	<span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Save and edit this item</a></li>
+                    <li><a class="dropdown-item" href="#">Save and new item</a></li>
+                    <li><a class="dropdown-item" href="#">Save and preview</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-secondary "><i class="bi bi-x-circle-fill" style="margin-right: 10px;"></i>Cancel</button>
+            </div>
     
           </main>
        <!--end page main-->
@@ -466,6 +395,10 @@
   <script src="assets/js/pace.min.js"></script>
   <!--app-->
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  
 
 </body>
 

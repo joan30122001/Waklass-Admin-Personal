@@ -219,12 +219,20 @@
               </a>
             </li>
             <li>
-              <a href="deposit-withdraw.html">
+              <a href="deposit.html">
                 <div class="parent-icon"><i class="bi bi-cash-coin"></i>
                 </div>
-                <div class="menu-title">Deposits & Withdrawals</div>
+                <div class="menu-title">Deposits</div>
               </a>
             </li>
+            <li>
+              <a href="withdraw.html">
+                <div class="parent-icon"><i class="bi bi-cash-coin"></i>
+                </div>
+                <div class="menu-title">Withdrawals</div>
+              </a>
+            </li>
+          <li>
             <li>
               <a href="plan.html">
                 <div class="parent-icon"><i class="bi bi-file-check-fill"></i>
@@ -269,107 +277,176 @@
           <main class="page-content">
             <!--breadcrumb-->
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-              <div class="breadcrumb-title pe-3">Payments</div>
+              <div class="breadcrumb-title pe-3">Deposits</div>
               <div class="ps-3">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Preview Payment</li>
+                    <li class="breadcrumb-item active" aria-current="page">Manage Deposits</li>
                   </ol>
                 </nav>
               </div>
-              <!-- <div class="ms-auto">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary">Settings</button>
-                  <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden">Toggle Dropdown</span>
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	<a class="dropdown-item" href="javascript:;">Action</a>
-                    <a class="dropdown-item" href="javascript:;">Another action</a>
-                    <a class="dropdown-item" href="javascript:;">Something else here</a>
-                    <div class="dropdown-divider"></div>	<a class="dropdown-item" href="javascript:;">Separated link</a>
-                  </div>
-                </div>
-              </div> -->
             </div>
             <!--end breadcrumb-->
 
             <div class="card">
                  <div class="card-body">
-                   <!-- <div class="d-flex align-items-center">
-                      <a href="" class="btn btn-primary">+ Add teacher</a>
+                   <div class="d-flex align-items-center">
+                    <a href="add-deposit.html" class="btn btn-primary">+ Add Deposit</a>
+                      <!-- <a href="add-teacher.html" class="btn btn-primary">+ Add teacher</a> -->
+                      <!-- <h5 class="mb-0">Customer Details</h5> -->
                        <form class="ms-auto position-relative">
                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-search"></i></div>
                          <input class="form-control ps-5" type="text" placeholder="search...">
                        </form>
-                   </div> -->
+                   </div>
                    <div class="table-responsive mt-3">
-                    
-
-
-                    <table class="table align-middle">
-                        <thead class="table-secondary">
-                          <!-- Removed as headers will now be inline -->
-                        </thead>
-                        <tbody>
-                          <!-- Each set of <tr> tags now represents one record with vertical headers -->
-                          <tr>
-                            <th>Tracking code:</th>
-                            <td>WTN5Z6SUXE</td>
-                          </tr>
-                          <tr>
-                            <th>Status:</th>
-                            <td>success</td>
-                          </tr>
-                          <tr>
-                            <th>Type:</th>
-                            <td>deposit</td>
-                          </tr>
-                          <tr>
-                            <th>Amount:</th>
-                            <td>500</td>
-                          </tr>
-                          <tr>
-                            <th>Phone number:</th>
-                            <td>697161353</td>
-                          </tr>
-                          <tr>
-                            <th>Date transaction:</th>
-                            <td>1716557536</td>
-                          </tr>
-                          <tr>
-                            <th>Ref:</th>
-                            <td>00000000009034191111</td>
-                          </tr>
-                          <tr>
-                            <th>Details:</th>
-                            <td>{"ref":"57e785e5b4e5d963763b8c64dc6a2ea5","rI":"WTN5Z6SUXE","rMt":"500","idReqDoh":"6171655762520008340","rDvs":"XAF","mode":"MTN-Money","refMode":"00000000009034191111","customer":"237697161353","motif":null,"rH":"RC216Y96878207310079208","hash":"b55691a8f0829c63eb195422d62e4a63"}</td>
-                          </tr>
-                          <tr>
-                            <th>Created:</th>
-                            <td>7 Jun 2024, 17:48</td>
-                          </tr>
-                          <tr>
-                            <th>Updated:</th>
-                            <td>7 Jun 2024, 17:48</td>
-                          </tr>
-                          <tr>
-                            <th>Actions</th>
-                            <td>
-                              <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                                <a href="edit-deposit-withdraw.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                                <!-- <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
-                              </div>
-                            </td>
-                          </tr>
-                          <!-- Repeat the above structure for each person's data -->
-                        </tbody>
-                      </table>
-                  </div>
+                     <table class="table align-middle">
+                       <thead class="table-secondary">
+                         <tr>
+                          <th>Tracking code</th>
+                          <!-- <th>Type</th> -->
+                          <th>Name</th>
+                          <th>Email</th>
+                          <!-- <th>UserType</th> -->
+                          <th>Payment operator</th>
+                          <th>Phone number</th>
+                          <th>Amount</th>
+                          <th>Status</th>
+                          <th>Actions</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
+                           <td>697161353</td>
+                           <td>500XAF</td>
+                           <td>success</td>
+                           <td>
+                             <div class="table-actions d-flex align-items-center gap-3 fs-6">
+                               <a href="preview-deposit.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                               <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                               <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                             </div>
+                           </td>
+                         </tr>
+                         <tr>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
+                           <td>697161353</td>
+                           <td>500XAF</td>
+                           <td>initiated</td>
+                           <td>
+                            <div class="table-actions d-flex align-items-center gap-3 fs-6">
+                              <a href="preview-deposit.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                            </div>
+                          </td>
+                         </tr>
+                         <tr>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
+                           <td>697161353</td>
+                           <td>500XAF</td>
+                           <td>success</td>
+                           <td>
+                            <div class="table-actions d-flex align-items-center gap-3 fs-6">
+                              <a href="preview-deposit.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                            </div>
+                          </td>
+                         </tr>
+                         <tr>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
+                           <td>697161353</td>
+                           <td>500XAF</td>
+                           <td>initiated</td>
+                           <td>
+                            <div class="table-actions d-flex align-items-center gap-3 fs-6">
+                              <a href="preview-deposit.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                            </div>
+                          </td>
+                         </tr>
+                         <tr>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
+                           <td>697161353</td>
+                           <td>500XAF</td>
+                           <td>initiated</td>
+                           <td>
+                            <div class="table-actions d-flex align-items-center gap-3 fs-6">
+                              <a href="preview-deposit.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                            </div>
+                          </td>
+                         </tr>
+                         <tr>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
+                           <td>697161353</td>
+                           <td>500XAF</td>
+                           <td>success</td>
+                           <td>
+                            <div class="table-actions d-flex align-items-center gap-3 fs-6">
+                              <a href="preview-deposit.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                            </div>
+                          </td>
+                         </tr>
+                       </tbody>
+                     </table>
+                   </div>
                  </div>
               </div>
+              <div>
+                <ul class="pagination justify-content-end">
+                  <li class="page-item"><a class="page-link" href="#" aria- label="Previous">&laquo;</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item"><a class="page-link" href="#">7</a></li>
+                  <li class="page-item"><a class="page-link" href="#">8</a></li>
+                  <li class="page-item"><a class="page-link" href="#">9</a></li>
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Next">&raquo;</a></li>
+                </ul>
+              </div>
 
-            
     
           </main>
        <!--end page main-->
@@ -395,7 +472,6 @@
   <!--end wrapper-->
 
 
-
   <!-- Bootstrap bundle JS -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <!--plugins-->
@@ -406,10 +482,6 @@
   <script src="assets/js/pace.min.js"></script>
   <!--app-->
   <script src="assets/js/app.js"></script>
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  
 
 </body>
 

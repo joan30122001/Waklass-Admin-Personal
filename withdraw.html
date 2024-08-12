@@ -232,6 +232,7 @@
                 <div class="menu-title">Withdrawals</div>
               </a>
             </li>
+          <li>
             <li>
               <a href="plan.html">
                 <div class="parent-icon"><i class="bi bi-file-check-fill"></i>
@@ -276,35 +277,24 @@
           <main class="page-content">
             <!--breadcrumb-->
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-              <div class="breadcrumb-title pe-3">Students</div>
+              <div class="breadcrumb-title pe-3">Withdrawals</div>
               <div class="ps-3">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Manage Students</li>
+                    <li class="breadcrumb-item active" aria-current="page">Manage Withdrawals</li>
                   </ol>
                 </nav>
               </div>
-              <!-- <div class="ms-auto">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary">Settings</button>
-                  <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden">Toggle Dropdown</span>
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	<a class="dropdown-item" href="javascript:;">Action</a>
-                    <a class="dropdown-item" href="javascript:;">Another action</a>
-                    <a class="dropdown-item" href="javascript:;">Something else here</a>
-                    <div class="dropdown-divider"></div>	<a class="dropdown-item" href="javascript:;">Separated link</a>
-                  </div>
-                </div>
-              </div> -->
             </div>
             <!--end breadcrumb-->
 
             <div class="card">
                  <div class="card-body">
                    <div class="d-flex align-items-center">
-                      <a href="add-student.html" class="btn btn-primary">+ Add student</a>
+                    <!-- <a href="add-deposit.html" class="btn btn-primary">+ Add Deposit</a> -->
+                      <!-- <a href="add-teacher.html" class="btn btn-primary">+ Add teacher</a> -->
                       <!-- <h5 class="mb-0">Customer Details</h5> -->
                        <form class="ms-auto position-relative">
                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-search"></i></div>
@@ -315,131 +305,130 @@
                      <table class="table align-middle">
                        <thead class="table-secondary">
                          <tr>
-                          <th>Profile & Name</th>
+                          <th>Tracking code</th>
+                          <!-- <th>Type</th> -->
+                          <th>Name</th>
                           <th>Email</th>
+                          <!-- <th>UserType</th> -->
+                          <th>Payment operator</th>
                           <th>Phone number</th>
-                          <th>Level of Study</th>
+                          <th>Amount</th>
+                          <th>Status</th>
                           <th>Actions</th>
                          </tr>
                        </thead>
                        <tbody>
                          <tr>
-                           <td>
-                             <div class="d-flex align-items-center gap-3 cursor-pointer">
-                                <img src="assets/images/avatars/avatar-1.png" class="rounded-circle" width="44" height="44" alt="">
-                                <div class="">
-                                  <p class="mb-0">Thomas Hardy</p>
-                                </div>
-                             </div>
-                           </td>
-                           <td>aaaa@gmail.com</td>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
                            <td>697161353</td>
-                           <td>-</td>
+                           <td>500XAF</td>
+                           <td>success</td>
                            <td>
                              <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                               <a href="preview-student.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                               <a href="edit-student.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                               <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="bi bi-trash-fill"></i></a>
-                             </div>
+                               <a href="preview-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                               <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                               <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                               <a href="edit-withdraw.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                            </div>
                            </td>
                          </tr>
                          <tr>
-                           <td>
-                             <div class="d-flex align-items-center gap-3 cursor-pointer">
-                                <img src="assets/images/avatars/avatar-2.png" class="rounded-circle" width="44" height="44" alt="">
-                                <div class="">
-                                  <p class="mb-0">Victoria Hardy</p>
-                                </div>
-                             </div>
-                           </td>
-                           <td>bbbb@gmail.com</td>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
                            <td>697161353</td>
-                           <td>-</td>
+                           <td>500XAF</td>
+                           <td>initiated</td>
                            <td>
                             <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                              <a href="preview-student.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                              <a href="edit-student.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a>
+                              <a href="preview-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                              <a href="edit-withdraw.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
                             </div>
                           </td>
                          </tr>
                          <tr>
-                           <td>
-                             <div class="d-flex align-items-center gap-3 cursor-pointer">
-                                <img src="assets/images/avatars/avatar-3.png" class="rounded-circle" width="44" height="44" alt="">
-                                <div class="">
-                                  <p class="mb-0">Maria Anders</p>
-                                </div>
-                             </div>
-                           </td>
-                           <td>cccc@gmail.com</td>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
                            <td>697161353</td>
-                           <td>-</td>
+                           <td>500XAF</td>
+                           <td>success</td>
                            <td>
                             <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                              <a href="preview-student.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                              <a href="edit-student.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a>
+                              <a href="preview-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                              <a href="edit-withdraw.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
                             </div>
                           </td>
                          </tr>
                          <tr>
-                           <td>
-                             <div class="d-flex align-items-center gap-3 cursor-pointer">
-                                <img src="assets/images/avatars/avatar-4.png" class="rounded-circle" width="44" height="44" alt="">
-                                <div class="">
-                                  <p class="mb-0">Maria Anders</p>
-                                </div>
-                             </div>
-                           </td>
-                           <td>dddd@gmail.com</td>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
                            <td>697161353</td>
-                           <td>-</td>
+                           <td>500XAF</td>
+                           <td>initiated</td>
                            <td>
                             <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                              <a href="preview-student.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                              <a href="edit-student.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a>
+                              <a href="preview-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                              <a href="edit-withdraw.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
                             </div>
                           </td>
                          </tr>
                          <tr>
-                           <td>
-                             <div class="d-flex align-items-center gap-3 cursor-pointer">
-                                <img src="assets/images/avatars/avatar-5.png" class="rounded-circle" width="44" height="44" alt="">
-                                <div class="">
-                                  <p class="mb-0">Martin Loother</p>
-                                </div>
-                             </div>
-                           </td>
-                           <td>eeee@gmail.com</td>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
                            <td>697161353</td>
-                           <td>-</td>
+                           <td>500XAF</td>
+                           <td>initiated</td>
                            <td>
                             <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                              <a href="preview-student.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                              <a href="edit-student.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a>
+                              <a href="preview-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                              <a href="edit-withdraw.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
                             </div>
                           </td>
                          </tr>
                          <tr>
-                           <td>
-                             <div class="d-flex align-items-center gap-3 cursor-pointer">
-                                <img src="assets/images/avatars/avatar-6.png" class="rounded-circle" width="44" height="44" alt="">
-                                <div class="">
-                                  <p class="mb-0">Martin Loother</p>
-                                </div>
-                             </div>
-                           </td>
-                           <td>ffff@gmail.com</td>
+                           <td>WTN5Z6SUXD</td>
+                           <!-- <td>deposit</td> -->
+                           <td>Joan</td>
+                           <td>Email@gmail.com</td>
+                           <!-- <td>student</td> -->
+                           <td>MTN Mobile Money</td>
                            <td>697161353</td>
-                           <td>-</td>
+                           <td>500XAF</td>
+                           <td>success</td>
                            <td>
                             <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                              <a href="preview-student.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
-                              <a href="edit-student.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a>
+                              <a href="preview-withdraw.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
+                              <!-- <a href="edit-teacher.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
+                              <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a> -->
+                              <a href="edit-withdraw.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
                             </div>
                           </td>
                          </tr>
@@ -463,7 +452,6 @@
                   <li class="page-item"><a class="page-link" href="#" aria-label="Next">&raquo;</a></li>
                 </ul>
               </div>
-
 
     
           </main>
@@ -490,41 +478,6 @@
   <!--end wrapper-->
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content rounded-0">
-        <div class="modal-body p-4 px-5">
-
-          
-          <div class="main-content text-center">
-              
-              <a href="#" class="btn-close" data-bsdismiss="modal" aria-label="Close"></a>
-
-              <div class="warp-icon mb-4">
-                <span class="icon-lock2"><i class="bi bi-trash-fill"></i></span>
-              </div>
-              
-                <!-- <label for="">This link is password protected</label> -->
-                <p class="mb-4">Do you really want to delete ?</p><br><br>
-
-                <div class="mb-4">
-                  <div class="btn-group">
-                      <button type="button" class="btn btn-success"> Yes delete</button>
-                  </div>
-                  <button type="button" class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Cancel</button>
-              </div>
-              
-            
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
   <!-- Bootstrap bundle JS -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <!--plugins-->
@@ -535,7 +488,6 @@
   <script src="assets/js/pace.min.js"></script>
   <!--app-->
   <script src="assets/js/app.js"></script>
-  
 
 </body>
 

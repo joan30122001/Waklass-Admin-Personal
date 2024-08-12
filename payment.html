@@ -219,10 +219,17 @@
               </a>
             </li>
             <li>
-              <a href="deposit-withdraw.html">
+              <a href="deposit.html">
                 <div class="parent-icon"><i class="bi bi-cash-coin"></i>
                 </div>
-                <div class="menu-title">Deposits & Withdrawals</div>
+                <div class="menu-title">Deposits</div>
+              </a>
+            </li>
+            <li>
+              <a href="withdraw.html">
+                <div class="parent-icon"><i class="bi bi-cash-coin"></i>
+                </div>
+                <div class="menu-title">Withdrawals</div>
               </a>
             </li>
             <li>
@@ -319,7 +326,7 @@
                              <div class="table-actions d-flex align-items-center gap-3 fs-6">
                                <a href="preview-payment.html" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views"><i class="bi bi-eye-fill"></i></a>
                                <!-- <a href="edit-payment.html" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a> -->
-                               <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a>
+                               <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="bi bi-trash-fill"></i></a>
                              </div>
                            </td>
                          </tr>
@@ -417,6 +424,41 @@
         <!--End Back To Top Button-->
   </div>
   <!--end wrapper-->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content rounded-0">
+        <div class="modal-body p-4 px-5">
+
+          
+          <div class="main-content text-center">
+              
+              <a href="#" class="btn-close" data-bsdismiss="modal" aria-label="Close"></a>
+
+              <div class="warp-icon mb-4">
+                <span class="icon-lock2"><i class="bi bi-trash-fill"></i></span>
+              </div>
+              
+                <!-- <label for="">This link is password protected</label> -->
+                <p class="mb-4">Do you really want to delete ?</p><br><br>
+
+                <div class="mb-4">
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-success"> Yes delete</button>
+                  </div>
+                  <button type="button" class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Cancel</button>
+              </div>
+              
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Bootstrap bundle JS -->
